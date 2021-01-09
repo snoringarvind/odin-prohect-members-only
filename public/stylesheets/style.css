@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  background-color: black;
+  display: flex;
+}
+
+.nav-logo {
+  width: 70%;
+}
+.nav-links {
+  width: 30%;
+}
+.nav-logo {
+  display: flex;
+  border: 1px solid white;
+  color: white;
+  justify-content: space-around;
+}
+
+.nav-links {
+  display: flex;
+  border: 1px solid white;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-bar a {
+  text-decoration: none;
+}
+
+.post-group {
+  border: 1px solid;
+  width: 48%;
+  margin: 2%;
+  text-align: start;
+  padding: 20px 20px 20px 40px;
+}
+
+.posts {
+  display: flex;
+  margin: 10px;
+  border: 1px solid;
+  justify-content: center;
+}
+
+a {
+  color: lightblue;
+}

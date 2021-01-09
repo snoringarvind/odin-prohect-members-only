@@ -1,0 +1,12 @@
+extends layout
+block content
+  h1 #{title}
+  h2 username : #{user.username}
+  h2 name: #{user.name}
+  form(action="" method='POST')
+    p.form-group
+      label(for="message") Message:
+      input#message(type="text" name='message' required)
+    button(type='submit') Post
+
+  

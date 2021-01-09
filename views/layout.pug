@@ -1,0 +1,20 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{title}
+    link(href='/stylesheets/style.css' rel='stylesheet')
+  body
+    div.nav-bar
+      div.nav-logo
+        p Members-only
+      div.nav-links
+        a(href="/") Home
+        if user==undefined
+          a(href="/members-only/login") Log-in
+          a(href="/members-only/signup") Sign-up
+        else
+          a(href="/members-only/logout") Log-out 
+          a(href="/members-only/create/post") Create-post
+          
+    block content
